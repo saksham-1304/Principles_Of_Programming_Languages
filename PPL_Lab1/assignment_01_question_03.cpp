@@ -10,16 +10,16 @@ int main()
     int n;
     cin >> n;
     int arr1[n];
-    cout << "Enter the elements 1st array one by one" << endl;
+    cout << "Enter the elements of 1st array " << endl;
     for (int i = 0; i < n; i++)
     {
         cin >> arr1[i];
     }
-    cout << "Enter the size of 2st array" << endl;
+    cout << "Enter the size of 2nd array" << endl;
     int m;
     cin >> m;
     int arr2[m];
-    cout << "Enter the elements 2st array one by one" << endl;
+    cout << "Enter the elements of 2nd array " << endl;
     for (int i = 0; i < m; i++)
     {
         cin >> arr2[i];
