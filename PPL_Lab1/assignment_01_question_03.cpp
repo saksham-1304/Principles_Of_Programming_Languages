@@ -46,7 +46,7 @@ int main()
             }
         }
     }
-    cout << " Elements of merged array in sorted form  " << endl;
+    cout << "Elements of merged array in sorted form " << endl;
     for (int i = 0; i < m + n; i++)
     {
         cout << ans[i] << " ";

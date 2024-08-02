@@ -32,7 +32,7 @@ int main()
     }
     cout<<endl;
     reverseArray(arr, n);
-    cout << "Elements before reversing the array" << endl;
+    cout << "Elements after reversing the array" << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";

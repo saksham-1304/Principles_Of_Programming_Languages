@@ -34,13 +34,13 @@ int main()
             mapp[arr[i]]++;
         }
     }
-    cout << " Elements of array " << endl;
+    cout << "Elements of array" << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
-    cout << " Elements of array after removing duplicates" << endl;
+    cout << "Elements of array after removing duplicates" << endl;
     for (int i = 0; i < ans.size(); i++)
     {
         cout << ans[i] << " ";
