@@ -1,6 +1,6 @@
 /*
 Assignemnt 05:
-Write to find the power of the given base and exponent by using function pow(base,recursion)
+Write to find the power of the given base and exponent by using function pow(base,exponent)
 */
 
 #include <iostream>
