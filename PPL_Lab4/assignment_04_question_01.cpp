@@ -4,7 +4,7 @@ Question 1: Program to count number of palindromic words present in any sentence
 */
 
 #include <iostream>
-#include <string.h>
+#include <string>
 using namespace std;
 bool checkPalindrome(string &s, int start, int end)
 {

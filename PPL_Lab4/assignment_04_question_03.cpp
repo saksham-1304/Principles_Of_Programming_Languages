@@ -31,5 +31,5 @@ int main()
         i++;
     }
 
-    cout << "The reveresed string is " << s << endl;
+    cout << "The reversed sentence is: " << s << endl;
 }
