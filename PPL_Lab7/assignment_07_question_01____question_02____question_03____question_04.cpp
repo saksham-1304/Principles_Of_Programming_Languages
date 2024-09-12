@@ -1,5 +1,18 @@
-/*Assignment 07
+/*
+Assignment 07
 Question 1: Program to insert 10 elements in a linked list
+*/
+
+/*
+Question 2: Program to add a node to ((n/2)+2)th position in a existing linked list
+*/
+
+/*
+Question 3: Program to remove a node 3rd to last from a existing linked list
+*/
+
+/*
+Question 4: Program to detect duplicate nodes(s) if exists in a linked list
 */
 
 #include <bits/stdc++.h>
@@ -114,19 +127,20 @@ Node *removeNthFromEnd(Node *head, int n)
     return head;
 }
 
-void detectduplicateNode(Node *head, unordered_map<Node *, int> &mapp)
+void detectduplicateNode(Node *head, unordered_map<int, int> &mapp)
 {
     Node *temp = head;
     while (temp != NULL)
 
     {
-        if (mapp[temp]>0)
+        if (mapp[temp->data] > 0)
         {
             cout << "Duplicate Exists" << endl;
+            return;
         }
         else
         {
-            mapp[temp]++;
+            mapp[temp->data]++;
         }
         temp = temp->next;
     }
@@ -135,10 +149,10 @@ void detectduplicateNode(Node *head, unordered_map<Node *, int> &mapp)
 }
 int main()
 {
-    cout << "Enter the number of elements you want to insert: " << endl;
+    cout << "Enter the number of elements you want to insert: ";
     int n;
     cin >> n;
-    cout << "Enter the element: " << endl;
+    cout << "Enter the element(s): " << endl;
     Node *head = NULL;
     Node *tail = NULL;
     for (int i = 0; i < n; i++)
@@ -160,7 +174,7 @@ int main()
 
     printList(head);
 
-    cout << "Enter the value that you want to insert at ((n / 2) + 2)" << endl;
+    cout << "Enter the value that you want to insert at ((n / 2) + 2)th position " << endl;
     int l;
     cin >> l;
     int position = (n / 2) + 2;
@@ -173,8 +187,8 @@ int main()
     {
         cout << "Invalid position." << endl;
     }
-    //head = removeNthFromEnd(head, 3);
+    head = removeNthFromEnd(head, 3);
     printList(head);
-    unordered_map<Node *, int> mapp;
+    unordered_map<int, int> mapp;
     detectduplicateNode(head, mapp);
 }
